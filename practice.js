@@ -641,7 +641,7 @@ function printBill(){
         <table id = "bill-summary">
             <tr>
                 <td>Total Item</td>
-                <td>${rows_value.length}</td>
+                <td >${rows_value.length}</td>
             </tr>
 
             <tr>
