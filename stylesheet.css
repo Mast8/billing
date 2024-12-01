@@ -120,7 +120,6 @@ h1{
 }
 
 #btn-container{
-    width: 70%;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     column-gap: 1rem;
@@ -157,6 +156,11 @@ table, th, td{
     text-align: center;
     font-family: var(--secFont);
 }
+
+/* tr:nth-child(even) {
+    background-color: Lightgreen;
+} */
+
 tfoot{
     display: none;
 }
@@ -243,8 +247,11 @@ input[type=checkbox]:checked:after {
         display: block 
     }
 
-    #btn-container button{
-        
+    #btn-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,
+              minmax(200px, 1fr));
+        grid-gap: 10px
         
     }
 }
