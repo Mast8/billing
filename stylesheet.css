@@ -238,8 +238,12 @@ input[type=checkbox]:checked:after {
     display: none;    
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 478px){
    
+    .detail {
+        display: flex;
+        flex-direction: column;
+    }
     thead { 
         min-width: 120px 
     }
@@ -252,7 +256,10 @@ input[type=checkbox]:checked:after {
         grid-template-columns: repeat(auto-fill,
               minmax(200px, 1fr));
         grid-gap: 10px
-        
+    }
+
+    #btn-container button{
+        margin: 0 50px;
     }
 }
 
