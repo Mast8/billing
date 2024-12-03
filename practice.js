@@ -601,6 +601,9 @@ function printBill(){
             font-family: var(--secFont);
             font-size: 1.25rem;
         }
+        tr:nth-child(even) td{
+            background-color:gray ;
+        }
 
         #bill-summary{
             width: 50%;
@@ -627,7 +630,7 @@ function printBill(){
             </header>
 
             <div class="detail">
-                <p>${document.getElementById('customer-name').value}</p>
+                <p>Customer: ${document.getElementById('customer-name').value}</p>
                 <p>${document.getElementById('shop-name').value}</p>
                 <p>${dateTime}</p>
                 

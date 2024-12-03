@@ -101,7 +101,8 @@ h1{
 .detail input{
     padding: 0.5rem 1rem;
     background-color: #e8f0fe;
-    border: none;
+    margin: 5px;
+    border-radius: 10px;
 }
 
 .detail p{
@@ -123,8 +124,8 @@ h1{
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     column-gap: 1rem;
-    margin: 1rem 2rem;
-   
+    margin: 1rem 0;
+    Padding: 0rem 2rem;
 }
 
 #btn-container button{
@@ -238,7 +239,7 @@ input[type=checkbox]:checked:after {
     display: none;    
 }
 
-@media only screen and (max-width: 478px){
+@media only screen and (max-width: 510px){
    
     .detail {
         display: flex;
