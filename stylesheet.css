@@ -158,9 +158,13 @@ table, th, td{
     font-family: var(--secFont);
 }
 
-/* tr:nth-child(even) {
-    background-color: Lightgreen;
-} */
+table tr:nth-child(even) td input{
+    background-color:gray ;
+}
+
+table tr:hover td input {
+    background-color: rgb(31, 100, 109);
+}
 
 tfoot{
     display: none;

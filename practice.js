@@ -114,7 +114,8 @@ if(localStorage.getItem('tablebody')){
                        
                         rows_value[ind1][j] = p_node.cells[j].children[0].value 
                         localStorage.setItem('rows_value', JSON.stringify(rows_value));
-                        localStorage.setItem('total_bill', JSON.stringify(totalSum))
+                        localStorage.setItem('total_bill', JSON.stringify(totalSum));
+                        
                                    
                     
                         
@@ -469,6 +470,8 @@ const download = document.getElementById('download')
 const month = ['Jan', 'feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
 download.addEventListener('click', printBill)
 
+
+
 function printBill(){
 // setting date
     const d = new Date();
@@ -477,6 +480,7 @@ function printBill(){
 
 
     let table_inner_str = document.getElementById('t_head').innerHTML;
+    
     
 // checking customer name
     if(!c_name.value){
@@ -497,6 +501,7 @@ function printBill(){
         return
     }
 
+    
     // taking all the value of table 
     for(let i=0; i<rows_value.length; i++){
         table_inner_str += "<tr>"
