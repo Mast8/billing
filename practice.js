@@ -590,7 +590,7 @@ function printBill(){
         }
 
         .detail p{
-            color: white;
+            color: blue;
             text-align: center;
             font-family: var(--secFont);
         }
@@ -622,7 +622,7 @@ function printBill(){
             font-size: 1.5rem;
             font-family: var(--primaryFont);
         }
-
+        
 
     </style>
 
@@ -631,13 +631,13 @@ function printBill(){
     
         <div class="hero">
             <header>
-                <h1>Billing Made Easy</h1>
+                <h1>Bill </h1>
             </header>
 
             <div class="detail">
                 <p>Customer: ${document.getElementById('customer-name').value}</p>
-                <p>${document.getElementById('shop-name').value}</p>
-                <p>${dateTime}</p>
+                <p>Store: ${document.getElementById('shop-name').value}</p>
+                <p>Date: ${dateTime}</p>
                 
             </div>
         </div>
@@ -648,7 +648,7 @@ function printBill(){
         <h1>Bill Summary:</h1>
         <table id = "bill-summary">
             <tr>
-                <td>Total Item</td>
+                <td>Items</td>
                 <td >${rows_value.length}</td>
             </tr>
 
